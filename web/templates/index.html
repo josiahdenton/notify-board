@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Notify Board</title>
+        <script src="https://unpkg.com/htmx.org@1.9.3" integrity="sha384-lVb3Rd/Ca0AxaoZg5sACe8FJKF0tnUgR2Kd7ehUOG5GCcROv5uBIZsOqovBAcWua" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <button 
+                hx-post="/click"
+                hx-trigger="click"
+                hx-target="#output"
+                hx-swap="outerHTML"
+            >
+                Click Me
+            </button>
+            <div id="output">
+                ... waiting on click
+            </div>
+        </main>
+    </body>
+</html>
